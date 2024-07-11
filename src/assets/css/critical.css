@@ -224,20 +224,62 @@
 }
 /* Large Desktop Parallax Effect - 100px */
 @media only screen and (min-width: 100rem) {
-  #hero-1619 .cs-background {
-    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* creates the parallax effect */
-    background-attachment: fixed;
+  #hero-1619 {
+    z-index: 1;
+    position: relative;
+    /* prevents overflow from the lines extending past the screen width */
+    overflow: hidden;
+    /* changes on tablet */
+    padding: 0 1rem;
+    padding-bottom: 6.25rem;
+    font-family: "Roboto", "Arial", sans-serif;
+    /* Centers button */
+    text-align: center;
   }
-  #hero-1619 .cs-background img {
-    display: none;
+  #hero-1619 .cs-picture {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    /* Background Image */
+    width: 100%;
   }
+  #hero-1619 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes image act like a background-image */
+    object-fit: cover;
+  }
+  #hero-1619 .cs-picture:before {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Black Color Overlay */
+    content: "";
+    opacity: 0.7;
+    display: block;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+  }
+  /* Dark Mode */
+  /*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+  /* Mobile - 360px */
+  /* Tablet - 600px */
+  /* Desktop - 1024px */
+  /* Dark Mode */
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
+@media only screen and (min-width: 100rem) and only screen and (min-width: 0rem) {
   body.dark-mode #hero-1619 .cs-item {
     background-color: var(--medium);
   }
@@ -258,11 +300,7 @@
     opacity: 0.5;
   }
 }
-/*-- -------------------------- -->
-<---          Services          -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
+@media only screen and (min-width: 100rem) and only screen and (min-width: 0rem) {
   #services-1354 {
     padding: var(--sectionPadding);
     position: relative;
@@ -392,14 +430,12 @@
     transition: transform 0.6s;
   }
 }
-/* Tablet - 600px */
-@media only screen and (min-width: 37.5rem) {
+@media only screen and (min-width: 100rem) and only screen and (min-width: 37.5rem) {
   #services-1354 .cs-item {
     grid-column: span 6;
   }
 }
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 100rem) and only screen and (min-width: 64rem) {
   #services-1354 .cs-content {
     text-align: left;
     align-items: flex-start;
@@ -408,8 +444,7 @@
     grid-column: span 3;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
+@media only screen and (min-width: 100rem) and only screen and (min-width: 0rem) {
   body.dark-mode #services-1354 .cs-topper {
     color: var(--primary);
   }

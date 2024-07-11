@@ -202,4 +202,86 @@ eleventyNavigation:
   </picture>
 </section>
 
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+<section id="sbs-1099">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/cabinets2-m.jpg"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/cabinets2.jpg"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/cabinets2.jpg"
+          alt="Elegant kitchen design"
+          width="323"
+          height="447"
+        />
+      </picture>
+      <!--Bottom right image-->
+      <picture class="cs-picture cs-picture2">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/cabinets2-m.jpg"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/cabinets2.jpg"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/cabinets2.jpg"
+          alt="Modern kitchen design"
+          width="305"
+          height="441"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">Elegant Kitchens: Your Modern Kitchen Experts</h2>
+      <p class="cs-text">
+        Elegant Kitchens is a family-owned and operated business with over 23
+        years of experience in crafting modern, elegant kitchens. We combine
+        generations of expertise with a passion for innovative design, ensuring
+        that each kitchen we build is both beautiful and functional.
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <h3 class="cs-h3">Our Mission</h3>
+          <p class="cs-li-text">
+            At Elegant Kitchens, our mission is to transform your kitchen into
+            the heart of your home. We specialize in custom cabinetry,
+            state-of-the-art appliances, and innovative designs that blend style
+            and functionality.
+          </p>
+        </li>
+        <li class="cs-li">
+          <h3 class="cs-h3">Why Choose Us</h3>
+          <p class="cs-li-text">
+            With over 23 years of experience, we bring decades of expertise to
+            every project. We use only the best materials to ensure durability
+            and beauty in every kitchen, and our innovative designs combine
+            functionality and aesthetics to create stunning spaces.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 {% include 'components/cta.html' %} {% endblock %}
