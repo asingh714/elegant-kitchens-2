@@ -10,9 +10,9 @@
   :root {
     --primary: #ff7b57;
     --primaryLight: #ee9c4b;
-    // --secondary: #001f3f;
+    --secondary: #001f3f;
     // --secondaryLight: #001f3f;
-    --secondary: #232b34;
+    // --secondary: #232b34;
     --secondaryLight: #2d3c4b;
 
     --headerColor: #1a1a1a;
@@ -420,9 +420,24 @@
       box-sizing: border-box;
       padding: 0;
       display: flex;
+      flex-direction: column;
       justify-content: flex-start;
       align-items: center;
+      text-decoration: none;
       z-index: 10;
+
+      #fancy-text {
+        font-family: "Caveat", cursive;
+        color: var(--primary);
+        font-size: 1.2em;
+      }
+
+      #logo-text {
+        font-size: 1.4em;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--secondary);
+      }
     }
 
     .cs-toggle {
@@ -660,7 +675,20 @@
 
       .cs-logo {
         /* makes it white */
-        filter: grayscale(1) brightness(1000%);
+        // filter: grayscale(1) brightness(1000%);
+
+        #fancy-text {
+          font-family: "Caveat", cursive;
+          color: var(--primary);
+          font-size: 1.2em;
+        }
+
+        #logo-text {
+          font-size: 1.4em;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          color: var(--bodyTextColorWhite);
+        }
       }
 
       .cs-toggle {
@@ -1158,7 +1186,19 @@
 
       .cs-logo {
         /* turns it white */
-        filter: grayscale(1) brightness(1000%);
+        // filter: grayscale(1) brightness(1000%);
+
+        #fancy-text {
+          font-family: "Caveat", cursive;
+          color: var(--primary);
+          font-size: 1.2em;
+        }
+        #logo-text {
+          font-size: 1.4em;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          color: var(--bodyTextColorWhite);
+        }
       }
 
       .cs-li-link,
@@ -1172,10 +1212,11 @@
 
       .cs-li-link {
         &.cs-active {
-          color: var(--secondary);
+          // color: var(--secondary);
         }
         &:hover {
-          color: var(--secondary);
+          // color: var(--secondary);
+          color: var(--primary);
         }
       }
     }

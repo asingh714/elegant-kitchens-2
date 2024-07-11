@@ -7,7 +7,7 @@
   :root {
     --primary: #ff7b57;
     --primaryLight: #ee9c4b;
-    --secondary: #232b34;
+    --secondary: #001f3f;
     --secondaryLight: #2d3c4b;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
@@ -342,9 +342,22 @@
     box-sizing: border-box;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    text-decoration: none;
     z-index: 10;
+  }
+  #cs-navigation .cs-logo #fancy-text {
+    font-family: "Caveat", cursive;
+    color: var(--primary);
+    font-size: 1.2em;
+  }
+  #cs-navigation .cs-logo #logo-text {
+    font-size: 1.4em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--secondary);
   }
   #cs-navigation .cs-toggle {
     width: 3.5rem;
@@ -548,7 +561,17 @@
   }
   body.dark-mode #cs-navigation .cs-logo {
     /* makes it white */
-    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #cs-navigation .cs-logo #fancy-text {
+    font-family: "Caveat", cursive;
+    color: var(--primary);
+    font-size: 1.2em;
+  }
+  body.dark-mode #cs-navigation .cs-logo #logo-text {
+    font-size: 1.4em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--bodyTextColorWhite);
   }
   body.dark-mode #cs-navigation .cs-toggle {
     background-color: var(--secondary);
@@ -967,7 +990,17 @@
   }
   body.dark-mode #cs-navigation .cs-logo {
     /* turns it white */
-    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #cs-navigation .cs-logo #fancy-text {
+    font-family: "Caveat", cursive;
+    color: var(--primary);
+    font-size: 1.2em;
+  }
+  body.dark-mode #cs-navigation .cs-logo #logo-text {
+    font-size: 1.4em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--bodyTextColorWhite);
   }
   body.dark-mode #cs-navigation .cs-li-link,
   body.dark-mode #cs-navigation .cs-phone {
@@ -976,11 +1009,8 @@
   body.dark-mode #cs-navigation .cs-phone-icon {
     filter: grayscale(1) brightness(10005);
   }
-  body.dark-mode #cs-navigation .cs-li-link.cs-active {
-    color: var(--secondary);
-  }
   body.dark-mode #cs-navigation .cs-li-link:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
 }
 /*-- -------------------------- -->
