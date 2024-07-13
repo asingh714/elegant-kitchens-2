@@ -4,12 +4,11 @@ module.exports = {
   phoneForTel: "283-264-9182",
   phoneFormatted: "(283) 264-9182",
   address: {
-    lineOne: "123 Kitchen Design Avenue",
-    lineTwo: "Suite 101",
-    city: "Denver",
-    state: "CO",
-    zip: "80206",
-    mapLink: "https://goo.gl/maps/UAQn4vuGDiwv7DV39",
+    lineOne: "123 Main st",
+    city: "Palm Beach",
+    state: "FL",
+    zip: "32801",
+    mapLink: "https://maps.app.goo.gl/v1xqx1x1x1x1x1x1x7",
   },
   hours: {
     days: "Monday - Friday",

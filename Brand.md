@@ -10,7 +10,7 @@ At Elegant Kitchens, our mission is to transform your kitchen into the heart of 
 
 ## Contact Information
 
-- **Address:** 123 Main St, Anytown, USA
+- **Address:** 123 Main St, Palm Beach, USA
 - **Phone:** [123-456-7890](tel:123-456-7890)
 - **Email:** [info@elegantkitchens.com](mailto:info@elegantkitchens.com)
 - **Customer Service:** 283-264-9182
@@ -111,7 +111,7 @@ You can get started by contacting us to schedule a consultation.
   - [Contact](#)
 
 - **Contact Us:**
-  - **Address:** 123 Main St, Anytown, USA
+  - **Address:** 123 Main St, Palm Beach, Florida
   - **Phone:** [123-456-7890](tel:123-456-7890)
   - **Email:** [info@elegantkitchens.com](mailto:info@elegantkitchens.com)
 
