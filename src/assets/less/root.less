@@ -8,15 +8,11 @@
 @media only screen and (min-width: 0rem) {
   // Website colors
   :root {
-    --primary: #ff7b57;
-    --primaryLight: #ee9c4b;
+    --primary: #376996;
+    --primaryLight: #6290c8;
     --secondary: #001f3f;
-    // --secondaryLight: #001f3f;
-    // --secondary: #232b34;
     --secondaryLight: #2d3c4b;
 
-    // --headerColor: #1a1a1a;
-    // --bodyTextColor: #4e4b66;
     --headerColor: #2d3c4b;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -1493,6 +1489,10 @@
       margin-bottom: clamp(1.75rem, 4.17vw, 2.75rem);
     }
 
+    .cs-text {
+      color: var(--bodyTextColorWhite);
+    }
+
     .cs-logo-img {
       width: 100%;
       height: auto;
@@ -2348,7 +2348,7 @@
       width: 100%;
       height: 100%;
       padding: (16/16em);
-      background-color: fade(#e5572c, 90%);
+      background-color: fade(#6290c8, 60%);
       opacity: 0;
       position: absolute;
       display: flex;
@@ -2469,9 +2469,8 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #reviews-355 {
+  #reviews-399 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
 
     .cs-container {
       width: 100%;
@@ -2495,6 +2494,7 @@
     }
 
     .cs-card-group {
+      width: 100%;
       padding: 0;
       margin: 0;
       display: flex;
@@ -2509,10 +2509,9 @@
       list-style: none;
       width: 100%;
       max-width: (630/16rem);
-      margin: 0;
-      /* 24px - 32px top & bottom */
-      /* 16px - 40px left & right */
-      padding: clamp(1.5rem, 3.15vw, 2rem) clamp(1rem, 3.15vw, 2.5rem);
+      /* 20px - 40px top & bottom */
+      /* 20px - 40px left & right */
+      padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
       background-color: #f7f7f7;
       border-radius: (16/16rem);
       /* prevents padding from adding to height and width */
@@ -2531,14 +2530,51 @@
       display: block;
     }
 
+    .cs-quote-white {
+      width: (60/16rem);
+      height: auto;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: (24/16rem);
+    }
+
     .cs-review {
       /* 14px - 20px */
-      font-size: clamp(0.875rem, 2vw, 1.25rem);
+      font-size: clamp(0.875rem, 1.6vw, 1.25rem);
       line-height: 1.5em;
       margin: 0;
       /* 20px - 40px */
       margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
       color: var(--bodyTextColor);
+    }
+
+    .cs-flex-group {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: (12/16rem);
+    }
+
+    .cs-profile {
+      width: (50/16rem);
+      height: (50/16rem);
+      border: 4px solid #fff;
+      border-radius: 50%;
+      /* clips image corners to make circle */
+      overflow: hidden;
+      position: relative;
+      display: block;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes the image behave like a background image */
+        object-fit: cover;
+      }
     }
 
     .cs-name {
@@ -2557,6 +2593,7 @@
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.6vw, 1rem);
       line-height: 1.5em;
+      font-weight: 400;
       margin: 0;
       color: var(--bodyTextColor);
       display: block;
@@ -2566,7 +2603,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #reviews-355 {
+  #reviews-399 {
     .cs-card-group {
       flex-direction: row;
       justify-content: center;
@@ -2583,7 +2620,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
-    #reviews-355 {
+    #reviews-399 {
       .cs-topper {
         color: var(--primaryLight);
       }
@@ -2595,6 +2632,10 @@
 
       .cs-item {
         background-color: var(--accent);
+      }
+
+      .cs-quote-white {
+        opacity: 0.2;
       }
 
       .cs-review,
